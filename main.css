@@ -3,7 +3,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+li {
     font-family: "Montserrat";
     font-weight: 700;
     line-height: 1;
@@ -28,6 +29,11 @@ header .title {
     letter-spacing: 6px;
 }
 
+header .menu-item {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
 #site-header {
     text-align: center;
     min-height: 15em;
@@ -40,4 +46,19 @@ header .title {
         padding-top: 4em !important;
         margin-bottom: 4em !important
     }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }

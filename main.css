@@ -1,0 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 0;
+    text-rendering: optimizeLegibility
+}
+
+h1 {
+    font-size: 60px;
+    font-size: 3.33333rem;
+    margin-bottom: 0.495em;
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 50px
+    }
+}
+
+header .title {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+#site-header {
+    text-align: center;
+    min-height: 15em;
+    padding-top: 7em;
+    margin-bottom: 9em
+}
+
+@media (max-width: 800px) {
+    #site-header {
+        padding-top: 4em !important;
+        margin-bottom: 4em !important
+    }
+}

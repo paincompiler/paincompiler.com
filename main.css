@@ -12,16 +12,14 @@ li {
     text-rendering: optimizeLegibility
 }
 
-h1 {
-    font-size: 60px;
-    font-size: 3.33333rem;
-    margin-bottom: 0.495em;
+html, body{
+    height: 100%;
 }
 
-@media (max-width: 550px) {
-    h1 {
-        font-size: 50px
-    }
+h1 {
+    font-size: 60px;
+    font-size: 1.875rem;
+    margin-bottom: 0.495em;
 }
 
 header .title {
@@ -36,29 +34,69 @@ header .menu-item {
 
 #site-header {
     text-align: center;
-    min-height: 15em;
-    padding-top: 7em;
-    margin-bottom: 9em
+    min-height: 11em;
+    position: relative;
+    top: 50%;
+    margin-top: -5.5em;
 }
 
-@media (max-width: 800px) {
-    #site-header {
-        padding-top: 4em !important;
-        margin-bottom: 4em !important
-    }
-}
-
-ul {
+ul.m-nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: inline-block;
 }
 
-li a {
+ul.m-nav:after {
+    content: " ";
+    visibility: hidden;
+    clear: both;
+}
+
+ul.m-nav > li {
+    margin-top: 16px;
+    margin-top: 0.5rem;
+}
+
+ul.m-nav > li > a {
+    font-size: 16px;
+    font-size: 0.5rem;
     display: inline-block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), url(./montserrat.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(./sourcesanspro.woff) format('woff');
+}
+
+@media (min-device-width: 772px){
+    #site-header:hover ul.m-nav{
+        opacity: 1;
+    }
+    ul.m-nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: inline-block;
+        opacity: 0;
+        transition: opacity 500ms;
+    }
+    ul.m-nav > li{
+        float: left;
+    }
 }

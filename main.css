@@ -19,7 +19,7 @@ html, body{
 h1 {
     font-size: 60px;
     font-size: 1.875rem;
-    margin-bottom: 0.495em;
+    margin-bottom: 0;
 }
 
 header .title {
@@ -38,6 +38,8 @@ header .menu-item {
     position: relative;
     top: 50%;
     margin-top: -5.5em;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 ul.m-nav {
@@ -54,18 +56,19 @@ ul.m-nav:after {
     clear: both;
 }
 
-ul.m-nav > li {
-    margin-top: 16px;
-    margin-top: 0.5rem;
+ul.m-nav > li   {
+   margin-top: 64px; 
+   margin-top: 2rem;
 }
 
 ul.m-nav > li > a {
-    font-size: 16px;
-    font-size: 0.5rem;
+    font-size: 24px;
+    font-size: 0.75rem;
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0 16px;
+    padding: 0 0.5rem;
     text-decoration: none;
 }
 
@@ -84,9 +87,12 @@ ul.m-nav > li > a {
 }
 
 @media (min-device-width: 772px){
-    #site-header:hover ul.m-nav{
+    #site-header:hover ul.m-nav {
         opacity: 1;
+        transform: translate(0, 24px);
+        transform: translate(0, 0.75rem);
     }
+
     ul.m-nav {
         list-style-type: none;
         margin: 0;
@@ -94,9 +100,26 @@ ul.m-nav > li > a {
         overflow: hidden;
         display: inline-block;
         opacity: 0;
-        transition: opacity 500ms;
+        transition: all 1.5s;
     }
+
     ul.m-nav > li{
-        float: left;
+       margin-top: 4px; 
+       margin-top: 0.125rem;
+       float: left;
     }
+
+	#site-header:hover div.title {	
+        transform: translate(0, 24px);
+        transform: translate(0, 0.75rem);
+    }
+
+	div.title {
+        z-index: 99;
+        transform: translate(0, 48px);
+        transform: translate(0, 1.5rem);
+        transition: transform 0.5s; 
+		position: relative;
+	}
 }
+

@@ -69,14 +69,18 @@ ul.m-nav:after {
 }
 
 ul.m-nav > li   {
-   margin-top: 64px; 
-   margin-top: 2rem;
+   margin-top: 32px; 
+   margin-top: 1rem;
+   margin-left: 4px;
+   margin-left: 0.125rem;
+   margin-right: 4px; 
+   margin-right: 0.125rem; 
    float: left;
 }
 
 ul.m-nav > li > a {
-    font-size: 24px;
-    font-size: 0.75rem;
+    font-size: 36px;
+    font-size: 1.125rem;
     display: inline-block;
     color: black;
     text-align: center;

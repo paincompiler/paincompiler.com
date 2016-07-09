@@ -56,10 +56,11 @@ header .menu-item {
 
 ul.m-nav {
     list-style-type: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
     overflow: hidden;
     display: inline-block;
+    text-align: center;
 }
 
 ul.m-nav:after {
@@ -75,7 +76,7 @@ ul.m-nav > li   {
    margin-left: 0.125rem;
    margin-right: 4px; 
    margin-right: 0.125rem; 
-   float: left;
+   display: inline-block;
 }
 
 ul.m-nav > li > a {
@@ -123,7 +124,6 @@ ul.m-nav > li > a {
     ul.m-nav > li{
        margin-top: 4px; 
        margin-top: 0.125rem;
-       float: left;
     }
 
 	#site-header:hover div.title {	

@@ -24,19 +24,18 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body{
+body {
     height: 100%;
 }
 
 h1 {
-    font-size: 60px;
-    font-size: 1.875rem;
+    font-size: 64px;
+    font-size: 2rem;
     margin-bottom: 0;
 }
 
 header .title {
     text-transform: uppercase;
-    letter-spacing: 6px;
 }
 
 header .menu-item {
@@ -56,8 +55,8 @@ header .menu-item {
 
 ul.m-nav {
     list-style-type: none;
-    margin: 32px auto 0 auto; 
-    margin: 1rem auto 0 auto; 
+    margin: 32px auto 0 auto;
+    margin: 1rem auto 0 auto;
     padding: 0;
     overflow: hidden;
     display: inline-block;
@@ -70,15 +69,15 @@ ul.m-nav:after {
     clear: both;
 }
 
-ul.m-nav > li   {
-   margin: 48px 4px auto 4px;
-   margin: 1.5rem 0.125rem auto 0.125rem;
-   display: inline-block;
+ul.m-nav> li {
+    margin: 32px 8px 32px 8px;
+    margin: 1rem 0.25rem 1rem 0.25rem;
+    display: inline-block;
 }
 
-ul.m-nav > li > a {
-    font-size: 64px;
-    font-size: 2rem;
+ul.m-nav> li> a {
+    font-size: 96px;
+    font-size: 3rem;
     display: inline-block;
     color: black;
     text-align: center;
@@ -88,58 +87,52 @@ ul.m-nav > li > a {
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Montserrat-Bold'), url(./montserrat.woff) format('woff');
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat-Bold'), url(./montserrat.woff) format('woff');
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(./sourcesanspro.woff) format('woff');
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(./sourcesanspro.woff) format('woff');
 }
 
-@media (min-device-width: 772px){
+@media (min-device-width: 772px) {
     #site-header:hover ul.m-nav {
         opacity: 1;
         transform: translate(0, 24px);
         transform: translate(0, 0.75rem);
     }
-
     ul.m-nav {
         list-style-type: none;
-        margin-top: 16px; 
-        margin-top: 0.5rem; 
+        margin-top: 16px;
+        margin-top: 0.5rem;
         padding: 0;
         overflow: hidden;
         display: inline-block;
         opacity: 0;
         transition: all 1.5s;
     }
-
-    ul.m-nav > li{
-       margin-top: 4px; 
-       margin-top: 0.125rem;
+    ul.m-nav> li {
+        margin-top: 4px;
+        margin-top: 0.125rem;
     }
-
-    ul.m-nav > li > a {
+    ul.m-nav> li> a {
         font-size: 32px;
-        font-size: 1rem; 
+        font-size: 1rem;
     }
-
-	#site-header:hover div.title {	
+    #site-header:hover div.title {
         transform: translate(0, 24px);
         transform: translate(0, 0.75rem);
     }
-
-	div.title {
+    div.title {
         z-index: 99;
         transform: translate(0, 48px);
         transform: translate(0, 1.5rem);
-        transition: transform 0.5s; 
-		position: relative;
-	}
+        transition: transform 0.5s;
+        position: relative;
+    }
 }
-

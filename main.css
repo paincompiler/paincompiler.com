@@ -71,6 +71,7 @@ ul.m-nav:after {
 ul.m-nav > li   {
    margin-top: 64px; 
    margin-top: 2rem;
+   float: left;
 }
 
 ul.m-nav > li > a {
